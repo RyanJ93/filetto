@@ -36,8 +36,12 @@ while not winner:
                 if coords is None:
                     print('Please provide some valid coordinates!')
                 else:
-                    if not matrix.is_cell_free(coords):
-                        print('Please provide some valid coordinates2!')
+                    try:
+                        if not matrix.is_cell_free(coords):
+                            print('Please provide some valid coordinates!')
+                            coords = None
+                    except KeyError:
+                        print('Please provide some valid coordinates!')
                         coords = None
             matrix.tick_cell(player, coords)
         else:
