@@ -15,3 +15,5 @@ Vertical, horizontal and diagonal series are allowed, the minimum series size is
 ### How to run the game
 
 The only requirement to run this application is the Python interpreter installed on your computer, the minimum Python version required is 3.8.
+
+Developed with ❤️ by [Enrico Sola](https://www.enricosola.dev).
